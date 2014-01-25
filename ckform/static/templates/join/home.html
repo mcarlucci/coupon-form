@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block get_coupons %}
+<div id="form_wrapper" class="col-lg-1">
+</div>
+<div id="form_wrapper" class="col-lg-6">
+<h2>Coupon Form</h2>
+<h4>Please complete the form below to print your coupons and enjoy the savings!</h4><br/>
+<form id="get_coupons" action="" method="post">{% csrf_token %}
+    {{ form.non_field_errors }}
+    <table width="275">
+   <tr align="right">
+    <td>
+    <div class="first_name">
+        <label for="first_name">*First Name:</label>
+        {{ form.first_name }}
+        {{ form.first_name.errors }}
+    </div>
+    </td>
+    </tr>
+    <tr align="right">
+    <td>
+    <div class="last_name">
+        <label for="last_name">*Last Name:</label>
+        {{ form.last_name }}
+        {{ form.last_name.errors }}
+    </div>
+    </td>
+    </tr>
+    <tr align="right">
+    <td>
+    <div class="email">
+        <label for="email">*E-mail Address:</label>
+        {{ form.email }}
+        {{ form.email.errors }}
+    </div>
+    </td>
+    </tr>
+    <tr align="right">
+    <td>
+    <div class="zip_code">
+        <label for="zip_code">*Zipcode:</label>
+        {{ form.zip_code }}
+        {{ form.zip_code.errors }}
+    </div>
+    </td>
+    </tr>
+    <tr align="left">
+    <td>
+    <span style="font-size: 11px;">*required</span><br/><br/>
+    </td>
+    </tr>
+    </table>
+    <div class="receive_newsletter">
+        {{ form.receive_newsletter }}
+        <span>Sign me up for the newsletter for special offers, new products and more.<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;Your email will not be shared with 3rd parties.</span>
+        {{ form.receive_newsletter.errors }}
+    </div>
+    <br/>
+    <p><input class='btn' type="submit" value="Get My Coupons!" /></p>
+    
+</form>
+</div>
+{% endblock %}

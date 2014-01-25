@@ -1,0 +1,21 @@
+label {
+color: #009a3d;
+}
+
+h2, p {
+    color: #6d6e71;
+}
+
+.btn {
+    background-color: #009a3d;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.errorlist {
+    color: red;
+}
+
+
+
+

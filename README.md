@@ -1,4 +1,10 @@
-coupon-form
-===========
+couponform
+==========
 
-Bootstrap/Django/MySql app that validates and post a form to the database
+Author: Matt Carlucci
+
+Coupon Form
+**Complete Enviornment
+Bootstrap| Django 1.6.1| Python 2.7 
+
+Simple Bootstrap/Django app that validates and posts form data to the database. 
