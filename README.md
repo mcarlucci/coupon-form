@@ -19,7 +19,10 @@ cd <your directory>
 
 Running
 -------
-`python manage.py runserver`
+```
+cd ckform
+python manage.py runserver
+```
 
 
 
