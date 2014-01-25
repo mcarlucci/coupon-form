@@ -3,7 +3,7 @@ Coupon Form
 
 *Complete Enviornment
 
-Bootstrap | Django 1.6.1 | Python 2.7
+Bootstrap | Django 1.5.1 | Python 2.7
 
 Author: Matt Carlucci
 
